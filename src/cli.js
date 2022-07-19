@@ -39,7 +39,7 @@ function startexec() {
         resetConsoleColour()
     })
     
-    checkDirForFiles(__dirname) // listen for file changes
+    checkDirForFiles(process.cwd()) // listen for file changes
 
 }
 
@@ -47,14 +47,14 @@ function listenToFile(filepath) {
 
     let gen = generation
 
-    console.log(`\x1b[35m`, `Listening to file "${filepath}"`)
+    console.log(`\x1b[36m`, `Listening to file "${filepath}"`)
     resetConsoleColour()
 
     fs.watchFile(filepath, { persistent: true }, (curr, prev) => {
 
         if (gen != generation) return
 
-        console.log(`\x1b[31m`, `${filepath} was updated, restarting node process...`)
+        console.log(`\x1b[33m`, `${filepath} was updated, restarting node process...`)
         resetConsoleColour()
 
         if (controller) controller.abort()
