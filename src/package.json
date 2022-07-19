@@ -1,0 +1,26 @@
+{
+  "name": "rep-runner",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VioPaige/rep-runner.git"
+  },
+  "keywords": [
+    "rep",
+    "runner"
+  ],
+  "author": "https://github.com/VioPaige",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VioPaige/rep-runner/issues"
+  },
+  "homepage": "https://github.com/VioPaige/rep-runner#readme",
+  "bin": {
+    "reprun": "./cli.js"
+  }
+}
