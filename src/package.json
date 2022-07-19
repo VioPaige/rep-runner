@@ -1,6 +1,6 @@
 {
   "name": "rep-runner",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,8 @@
   "homepage": "https://github.com/VioPaige/rep-runner#readme",
   "bin": {
     "reprun": "./cli.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
   }
 }

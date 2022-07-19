@@ -1,5 +1,5 @@
 module.exports = () => {
 
-    return console.log(`Working!`)
+    return console.log(`Rep-Runner is working!`)
 
 }
